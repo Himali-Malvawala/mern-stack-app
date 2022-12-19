@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 
-app.get("/", (req, res) => res.send("Hello Newyorkers!!"));
+app.get("/", (req, res) => res.send("Hey there!!"));
 
 app.use("/api/books", books);
 
