@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 const CreateBook = () => {
   return (
-    <div className="sm:flex sm:flex-col sm:justify-center sm:items-center mx-5 sm:mx-0">
+    <div className="sm:flex sm:flex-col sm:justify-center sm:items-center mx-5">
       <Link
         to="/"
-        className="bg-[#FFFFD0] hover:bg-transparent border-2 border-[#FFFFD0] px-3 py-2 text-lg font-semibold rounded-md hover:text-white"
+        className="bg-[#FFFFD0] hover:bg-transparent border-2 border-[#FFFFD0] px-3 py-2 text-lg font-semibold rounded-md hover:text-white text-left mr-auto text-[#A555EC]"
       >
         Show All Books
       </Link>
-      <h1 className="font-semibold text-4xl text-white">Add Book</h1>
-      <h6 className="text-lg text-white">Create new book</h6>
-      <form>
+      <h1 className="font-semibold text-5xl text-white mt-5">Add Book</h1>
+      <h6 className="text-lg text-white mt-3">Create new book</h6>
+      <form className="mt-5">
         <div className="flex flex-col gap-5">
           <input
             type="text"
@@ -52,7 +52,7 @@ const CreateBook = () => {
         </div>
         <button
           type="submit"
-          className="w-full py-2 px-3 rounded-md border-2 border-[#FFFFD0] text-white font-medium shadow-2xl mt-7 sm:w-[30rem]"
+          className="w-full py-2 px-3 rounded-md border-2 border-[#FFFFD0] hover:bg-[#FFFFD0] hover:text-[#A555EC] text-white font-medium shadow-2xl mt-7 sm:w-[30rem]"
         >
           Submit
         </button>
