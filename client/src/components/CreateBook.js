@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CreateBook = () => {
   return (
-    <div className="">
+    <div className="sm:flex sm:flex-col sm:justify-center sm:items-center mx-5 sm:mx-0">
       <Link
         to="/"
         className="bg-[#FFFFD0] hover:bg-transparent border-2 border-[#FFFFD0] px-3 py-2 text-lg font-semibold rounded-md hover:text-white"
@@ -17,42 +17,42 @@ const CreateBook = () => {
             type="text"
             placeholder="Title"
             name="title"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl mb-5"
+            className="py-2 px-3 rounded-md shadow-2xl mb-5 sm:w-[30rem]"
           />
           <input
             type="text"
             placeholder="ISBN"
             name="isbn"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
           />
           <input
             type="text"
             placeholder="Author"
             name="author"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
           />
           <input
             type="text"
             placeholder="Description"
             name="description"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
           />
           <input
             type="date"
             placeholder="Published Date"
             name="published_date"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
           />
           <input
             type="text"
             placeholder="Publisher"
             name="publisher"
-            className="sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md shadow-2xl"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
           />
         </div>
         <button
           type="submit"
-          className="w-full sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 py-2 px-3 rounded-md border-2 border-[#FFFFD0] text-white font-medium shadow-2xl mt-7"
+          className="w-full py-2 px-3 rounded-md border-2 border-[#FFFFD0] text-white font-medium shadow-2xl mt-7 sm:w-[30rem]"
         >
           Submit
         </button>
