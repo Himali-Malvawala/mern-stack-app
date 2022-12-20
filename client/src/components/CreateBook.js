@@ -9,6 +9,7 @@ const CreateBook = () => {
     title: "",
     isbn: "",
     author: "",
+    image: "",
     description: "",
     published_date: "",
     publisher: "",
@@ -28,6 +29,7 @@ const CreateBook = () => {
           title: "",
           isbn: "",
           author: "",
+          image: "",
           description: "",
           published_date: "",
           publisher: "",
@@ -74,6 +76,14 @@ const CreateBook = () => {
             name="author"
             className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
             value={book.author}
+            onChange={onChangeHandler}
+          />
+          <input
+            type="text"
+            placeholder="Image Link"
+            name="image"
+            className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
+            value={book.image}
             onChange={onChangeHandler}
           />
           <input
