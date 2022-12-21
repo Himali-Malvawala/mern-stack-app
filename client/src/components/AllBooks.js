@@ -33,7 +33,7 @@ const AllBooks = () => {
           + Create Book
         </Link>
       </div>
-      <div>{allBooks}</div>
+      <div className="flex flex-wrap gap-8">{allBooks}</div>
     </div>
   );
 };
