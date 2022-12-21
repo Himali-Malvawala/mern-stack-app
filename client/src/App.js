@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <header>
-        <div className="mt-10">
+        <div className="mt-10 mb-10">
           <Routes>
             <Route exact path="/" element={<AllBooks />} />
             <Route path="/create-book" element={<CreateBook />} />
