@@ -23,14 +23,16 @@ const AllBooks = () => {
       : books.map((data, index) => <Card data={data} key={index} />);
 
   return (
-    <div>
+    <div className="mx-5">
       <h1 className="font-semibold text-5xl text-white">Books List</h1>
-      <Link
-        to="/create-book"
-        className="bg-[#FFFFD0] hover:bg-transparent border-2 border-[#FFFFD0] px-3 py-2 text-lg font-semibold rounded-md hover:text-white text-left mr-auto text-[#A555EC]"
-      >
-        + Create Book
-      </Link>
+      <div className="mb-12 mt-10">
+        <Link
+          to="/create-book"
+          className="bg-[#FFFFD0] hover:bg-transparent border-2 border-[#FFFFD0] px-3 py-2 text-lg font-semibold rounded-md hover:text-white text-[#A555EC]"
+        >
+          + Create Book
+        </Link>
+      </div>
       <div>{allBooks}</div>
     </div>
   );
