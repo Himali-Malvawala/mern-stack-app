@@ -75,7 +75,7 @@ const UpdateBookInfo = () => {
         <h5>Update Info</h5>
       </div>
       <div>
-        <form className="mt-5" onSubmit={onSubmitHandler}>
+        <form className="mt-5" onSubmit={onSubmitHandler} noValidate>
           <div className="flex flex-col gap-5">
             <label htmlFor="title">Title</label>
             <input

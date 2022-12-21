@@ -52,7 +52,7 @@ const CreateBook = () => {
       </Link>
       <h1 className="font-semibold text-5xl text-white mt-5">Add Book</h1>
       <h6 className="text-lg text-white mt-3">Create new book</h6>
-      <form className="mt-5" onSubmit={onSubmitHandler}>
+      <form className="mt-5" onSubmit={onSubmitHandler} noValidate>
         <div className="flex flex-col gap-5">
           <input
             type="text"
@@ -61,6 +61,7 @@ const CreateBook = () => {
             className="py-2 px-3 rounded-md shadow-2xl mb-5 sm:w-[30rem]"
             value={book.title}
             onChange={onChangeHandler}
+            required
           />
           <input
             type="text"
@@ -69,6 +70,7 @@ const CreateBook = () => {
             className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
             value={book.isbn}
             onChange={onChangeHandler}
+            required
           />
           <input
             type="text"
@@ -77,6 +79,7 @@ const CreateBook = () => {
             className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
             value={book.author}
             onChange={onChangeHandler}
+            required
           />
           <input
             type="text"
@@ -85,6 +88,7 @@ const CreateBook = () => {
             className="py-2 px-3 rounded-md shadow-2xl sm:w-[30rem]"
             value={book.image}
             onChange={onChangeHandler}
+            required
           />
           <input
             type="text"
