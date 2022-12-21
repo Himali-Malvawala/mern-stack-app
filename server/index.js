@@ -1,11 +1,16 @@
 const express = require("express");
 require("dotenv").config({ path: "./config.env" });
 const connectDB = require("./database/db");
+const cors = require("cors");
 
 const books = require("./routes/api/books");
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors({ credentials: true, origin: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 connectDB();
 
